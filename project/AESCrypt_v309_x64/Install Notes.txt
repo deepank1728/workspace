@@ -1,0 +1,16 @@
+AES Crypt for Windows Installation Notes
+
+Inside this ZIP file are two executable files:
+  AESCrypt.msi
+  setup.exe
+
+To install AES Crypt, first try to install using "AESCrypt.msi".  This
+should work on up-to-date Windows 7 and 8 systems.
+
+If you receive an error indicating that you are missing some files,
+execute "setup.exe".  This should install the required Microsoft library
+files that are included in most up-to-date Windows systems.  It will
+then also install AES Crypt for you.  (Note that executing "setup.exe"
+when your system already has the required files will also produce an
+error message.)
+

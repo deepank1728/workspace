@@ -1,0 +1,5 @@
+max_path_sum_btw_leaves.cpp: In function ‘void display(node*)’:
+max_path_sum_btw_leaves.cpp:23: error: ‘cout’ was not declared in this scope
+max_path_sum_btw_leaves.cpp: In function ‘int main()’:
+max_path_sum_btw_leaves.cpp:59: error: ‘cout’ was not declared in this scope
+max_path_sum_btw_leaves.cpp:59: error: ‘endl’ was not declared in this scope

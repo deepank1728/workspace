@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	deepank<br>
+	<script>
+	
+function insertTab(o, e)
+{		
+	var kC = e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which;
+	if (kC == 9 && !e.shiftKey && !e.ctrlKey && !e.altKey)
+	{
+		var oS = o.scrollTop;
+		if (o.setSelectionRange)
+		{
+			var sS = o.selectionStart;	
+			var sE = o.selectionEnd;
+			o.value = o.value.substring(0, sS) + "\t" + o.value.substr(sE);
+			o.setSelectionRange(sS + 1, sS + 1);
+			o.focus();
+		}
+		else if (o.createTextRange)
+		{
+			document.selection.createRange().text = "\t";
+			e.returnValue = false;
+		}
+		o.scrollTop = oS;
+		if (e.preventDefault)
+		{
+			e.preventDefault();
+		}
+		return false;
+	}
+	return true;
+}
+
+</script>
+
+</head>
+
+<body>
+
+	
+	<h1>Hello Mummy<br></h1>
+	<h2>Dont be afraid<br></h2>
+	<h3>I am Here<br></h3>
+	
+<form method="post" action="action_buffer.php">
+
+	<textarea rows="100" cols="180" id="area" onkeydown="insertTab(this, event);">
+	
+	</textarea>
+	
+	<input type="submit" value="submit">
+
+</form>
+</body>
+
+
+
+</html>

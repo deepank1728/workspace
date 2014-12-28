@@ -1,0 +1,62 @@
+<html>
+
+	<head>
+	<title>An ajax demo </title>
+	
+	<script language="javascript">
+		
+		var XMLHttpRequestobject =false;
+		
+		if(window.XMLHttpRequest)
+		{
+			XMLHttpRequestObject=new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject)
+		{
+			XMLHttpRequestObject=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		
+		
+		function getData(datasource,divID)
+		{
+			if(XMLHttpRequestObject)
+			{
+					
+					var obj=document.getElementById(divID);
+					
+					XMLHttpRequestObject.open("GET",datasource);
+					
+					XMLHttpRequestObject.onreadystatechange=function()
+					{
+						if(XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200)
+						{
+							obj.innerHTML=XMLHttpRequestObject.responseText;
+						}
+					}
+					
+					XMLHttpRequestObject.send(null);
+				
+			}
+		}
+	
+	</script>
+	
+	</head>
+	
+	<body>
+		<h1>An Ajax Demo</h1>
+		
+		<form >
+		<input type="button" value="fetch the message1" onclick="getData('data.php?d=1&b=2&c=3','targetdiv')">
+		<input type="button" value="fetch the message2" onclick="getData('data.php?d=6&b=7&c=8','targetdiv')">
+		</form>
+		
+		<div id="targetdiv" >
+		<p>the fetched message will appear here</p>
+		</div>
+		
+		
+	
+	</body>
+
+</html>
