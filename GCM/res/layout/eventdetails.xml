@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15">
+ 
+        <ViewFlipper
+            android:id="@+id/ViewFlipper01"
+            android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+ 
+            <LinearLayout
+                android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+                
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" About Event  "
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:layout_weight="15"
+                    android:gravity="center"/>
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+
+                    </LinearLayout>
+                </ScrollView>
+                
+            </LinearLayout>
+ 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:orientation="vertical"
+                android:weightSum="100" >
+                
+                <TextView
+                    android:id="@+id/ Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Date and Vanue"
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:layout_weight="15"
+                    android:gravity="center"/>
+
+                <ScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+
+                    </LinearLayout>
+                </ScrollView>
+                
+ 
+                               
+            </LinearLayout>
+ 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        
+                android:orientation="vertical" >
+				<TextView
+                    android:id="@+id/Team_and_Organiser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Team and Organiser"
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:layout_weight="15"
+                    android:gravity="center"/>
+
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="85" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+
+                    </LinearLayout>
+                </ScrollView>
+                
+                    
+            </LinearLayout>
+            
+        </ViewFlipper>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+   		     
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="85">
+ 
+        <Button
+            android:id="@+id/Previous"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous" >
+        </Button>
+ 
+        <Button
+            android:id="@+id/Next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next" >
+        </Button>
+        
+    </RelativeLayout>
+    
+</LinearLayout> 
