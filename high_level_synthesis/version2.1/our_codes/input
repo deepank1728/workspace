@@ -1,0 +1,9 @@
+8
+a=b+c
+m=n+o
+p=s+q
+b=a+m
+q=m+b
+m=a+p
+v=d-f
+g=f+d
