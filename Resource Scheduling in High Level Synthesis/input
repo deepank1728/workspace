@@ -1,0 +1,10 @@
+9
+a=b+c
+m=n+o
+p=s+q
+b=a*m
+a=c*d
+m=b+q
+c=a-o
+m=a*b
+k=f-n

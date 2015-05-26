@@ -1,0 +1,84 @@
+ALU1 +-* 0 0
+add1 + 0 0
+add1 + 2 56
+sub1 - 3 163
+mul1 * 4 96
+break
+ALU1 +-* 0 0
+add1 + 2 56
+add1 + 0 0
+sub1 - 3 163
+mul1 * 4 96
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 0 0
+sub1 - 0 0
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 0 0
+sub1 - 0 0
+mul1 * 4 96
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 0 0
+sub1 - 3 163
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 0 0
+sub1 - 3 163
+mul1 * 4 96
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 2 56
+sub1 - 0 0
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 2 56
+sub1 - 0 0
+mul1 * 4 96
+break
+ALU1 +-* 3 48
+add1 + 0 0
+add1 + 2 56
+sub1 - 3 163
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 2 56
+add1 + 0 0
+sub1 - 0 0
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 2 56
+add1 + 0 0
+sub1 - 0 0
+mul1 * 4 96
+break
+ALU1 +-* 3 48
+add1 + 2 56
+add1 + 0 0
+sub1 - 3 163
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 2 56
+add1 + 2 56
+sub1 - 0 0
+mul1 * 0 0
+break
+ALU1 +-* 3 48
+add1 + 2 56
+add1 + 2 56
+sub1 - 3 163
+mul1 * 0 0
+break
